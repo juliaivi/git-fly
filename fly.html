@@ -1,0 +1,114 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <script src="jquery-3.5.1.slim.js"></script>
+    <link rel="stylesheet" href="../git 1/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../git 1/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <script src="../git 1/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <!--<style>
+    .owl-carousel button.owl-dot {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #f4f4f4;
+        margin: 0 8px;
+        outline: none;
+
+        display: inline-block;
+    }
+
+</style>
+
+!important-->
+
+
+
+    <title>fly</title>
+</head>
+<body>
+<!--header-->
+
+<header class="header">
+    <div class="container">
+        <div class="header_inner">
+            <div class="header_logo">Black Sea</div>
+
+            <nav class="nav" >
+                <a class="nav_link" href="#">Home</a>
+                <p class="nav_p">/</p>
+                <a class="nav_link" href="#">About me</a>
+                <p class="nav_p">/</p>
+                <a class="nav_link" href="#">Portfolio</a>
+                <p class="nav_p">/</p>
+                <a class="nav_link" href="#">Contact me</a>
+            </nav>
+        </div>
+    </div><!--container-->
+</header><!--header-->
+
+<div class="slaider">
+    <div class="container">
+        <div id="js-carousel-1" class="owl-carousel too">
+
+            <div class="carousel-item ">
+                <img class = 'corousel_img' src="../git 1/images/head.jpg">
+                <h1 class="slaider_title"><p>We need the tonic of</p> <p>wildness</p></h1>
+                <a class="btn" href="#">Read more</a>
+            </div>
+            <div class="carousel-item">
+                <img class = 'corousel_img' src="../git 1/images/1.png">
+            </div>
+            <div class="carousel-item">
+                <img class = 'corousel_img' src="../git 1/images/head.jpg">
+            </div>
+            <div class="carousel-item">
+                <img class = 'corousel_img' src="../git 1/images/1.png">
+            </div>
+            <div class="carousel-item">
+                <img class = 'corousel_img' src="../git 1/images/head.jpg">
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+</div>
+
+<script>
+
+    $(document).ready(function(){
+        $('#js-carousel-1').owlCarousel({
+            loop: true, //бесконечное проигрывание
+            autoplay: true,
+            autoplayTimeout: 4000,//автоматическое проигрывание
+            autoplaySpeed: 4000,//Как долго длится переход к следующему слайду
+            autoplayHoverPause: true,//Останавливать при наведении мыши
+            slideTransition: 'linear',//Чтобы переход был ровным
+            items: 2,
+            nav: false,
+
+            responsive: {
+                600: {
+                    items: 1
+                }
+            }
+
+        });
+    });
+
+
+</script>
+
+
+
+</body>
+</html>
